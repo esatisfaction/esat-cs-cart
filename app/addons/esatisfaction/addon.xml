@@ -1,47 +1,47 @@
 <?xml version="1.0"?>
 <addon scheme="2.0">
-  <id>esatisfaction</id>
-  <name>(Dvs)e-Satisfaction Tracking Service</name>
-  <description>e-Satisfaction Tracking Service</description>
-  <version>1.0</version>
-  <priority>2000</priority>
-  <position>230</position>
-  <status>active</status>
-  <translations>
-		<item for="name" lang="en">e-Satisfaction Tracking Service id</item>	
-		<item for="name" lang="el">e-Satisfaction Κώδικας Καταγραφής Πωλήσεων</item>
+    <id>esatisfaction</id>
+    <name>(Dvs)e-Satisfaction Tracking Service</name>
+    <description>e-Satisfaction Tracking Service</description>
+    <version>1.0</version>
+    <priority>2000</priority>
+    <position>230</position>
+    <status>active</status>
+    <translations>
+        <item for="name" lang="en">e-Satisfaction Tracking Service id</item>
+        <item for="name" lang="el">e-Satisfaction Κώδικας Καταγραφής Πωλήσεων</item>
     </translations>
-  <auto_install>MULTIVENDOR,ULTIMATE</auto_install>	
- <settings edition_type="ROOT,ULT:VENDOR">
-   <sections>
-    <section id="general">
-	 <items>
-      <item id="site_id">
-        <name>site id</name>
-        <type>input</type>
-        <default_value></default_value>
-        <translations>
-          <item for="name" lang="el">Site id</item>
-        </translations>
-      </item>
-      <item id="tracking">
-        <name>Track e-commerce transactions for e-Satisfaction</name>
-        <type>checkbox</type>
-        <default_value>Y</default_value>
-        <translations>
-          <item for="name" lang="el">Καταγραφή των συναλλαγών στη e-Satisfaction</item>
-        </translations>
-      </item>
-      <item id="id_key">
-        <name>ID Key</name>
-        <type>input</type>
-        <default_value></default_value>
-        <translations>
-          <item for="name" lang="el">ID Key</item>
-        </translations>
-      </item>
-	  </items>
-    </section>
-   </sections>
-  </settings>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="site_id">
+                        <name>site id</name>
+                        <type>input</type>
+                        <default_value></default_value>
+                        <translations>
+                            <item for="name" lang="el">Site id</item>
+                        </translations>
+                    </item>
+                    <item id="tracking">
+                        <name>Track e-commerce transactions for e-Satisfaction</name>
+                        <type>checkbox</type>
+                        <default_value>Y</default_value>
+                        <translations>
+                            <item for="name" lang="el">Καταγραφή των συναλλαγών στη e-Satisfaction</item>
+                        </translations>
+                    </item>
+                    <item id="id_key">
+                        <name>ID Key</name>
+                        <type>input</type>
+                        <default_value></default_value>
+                        <translations>
+                            <item for="name" lang="el">ID Key</item>
+                        </translations>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
 </addon>
