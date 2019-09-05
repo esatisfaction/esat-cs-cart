@@ -1,12 +1,15 @@
-{if $addons.esatisfaction.tracking == 'Y'}
-    <div class="esatisfaction"></div>
+{if $addons.esatisfaction.enabled == 'Y'}
+    <div id="esat-checkout-questionnaire-container"></div>
     <br/>
-    <script type="text/javascript">
-        var _esatisf = _esatisf || [];
-        var token = '{"https://www.e-satisfaction.gr/miniquestionnaire/genkey.php?site_auth=`$addons.esatisfaction.id_key`"|file_get_contents}';
-        _esatisf.push(['_responder', '{$order_info.order_id}']);
-        _esatisf.push(['_token', token]);
-        _esatisf.push(['_email', '{$order_info.email}']);
-        _esatisf.push(['_showQuestionnaire', '.esatisfaction']);
+    <script>
+        // Update metadata
+        Esat.updateMetadata('{$addons.esatisfaction.checkout_questionnaire_id}', {
+            responder: {
+                "email": '{$order_info.email}',
+            },
+            questionnaire: {
+                "transaction_id": '{$order_info.order_id}',
+            }
+        });
     </script>
 {/if}

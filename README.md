@@ -1,13 +1,11 @@
-## e-satisfaction CSCart Plugin
-
-### e-satisfaction Version
-
-This branch is working only with e-satisfaction v1.0.
+## e-satisfaction CS-Cart Plugin
 
 ### Compatibility
 
 This branch is compatible with the following CSCart versions:
 * `CSCart v4.10.3`
+
+If you are working on the e-satisfaction v1.0, you should check [legacy-1.0](https://github.com/esatisfaction/esat-cs-cart/tree/legacy-1.0).
 
 ### Installation
 
