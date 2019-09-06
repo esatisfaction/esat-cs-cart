@@ -16,7 +16,7 @@
         var l = function () {
             var r = d.getElementsByTagName('script')[0], s = d.createElement('script');
             s.async = true;
-            s.src = 'https://collection.e-satisfaction.com/dist/js/integration' + (!!w.jQuery ? '.jq' : '') + '.min.js';
+            s.src = 'https://collection.e-satisfaction.com/dist/js/integration' + (!!w.jQuery ? '' : '.jq') + '.min.js';
             r.parentNode.insertBefore(s, r);
         };
 
